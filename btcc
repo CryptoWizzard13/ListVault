@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BTCC Listing Packages</title>
+
+<style>
+body{margin:0;font-family:Arial;background:#0b0b0b;color:white;}
+.container{max-width:1000px;margin:auto;padding:60px 20px;}
+h1{text-align:center;font-size:38px;}
+.card{
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.1);
+padding:25px;
+margin:20px 0;
+border-radius:16px;
+}
+.price{color:gold;font-weight:bold;}
+.btn{
+display:inline-block;
+margin-top:10px;
+padding:10px 14px;
+background:gold;
+color:black;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🔷 BTCC Listing Packages</h1>
+
+<div class="card">
+<h2>Basic</h2>
+<div class="price">$8,000</div>
+<p>Announcement, social promotion, spot listing</p>
+<a class="btn" href="https://t.me/cryptowizzard13">Get Started</a>
+</div>
+
+<div class="card">
+<h2>Standard</h2>
+<div class="price">$10,000</div>
+<p>Banners, AMA, influencers, multi-language marketing</p>
+<a class="btn" href="https://t.me/cryptowizzard13">Get Started</a>
+</div>
+
+<div class="card">
+<h2>Premium</h2>
+<div class="price">$15,000</div>
+<p>Global campaigns, SEO, offline events, top-tier exposure</p>
+<a class="btn" href="https://t.me/cryptowizzard13">Get Started</a>
+</div>
+
+<a class="btn" href="index.html">← Back</a>
+
+</div>
+
+</body>
+</html>
