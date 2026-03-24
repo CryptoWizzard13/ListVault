@@ -3,32 +3,84 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tothemoon Listing</title>
+<title>Tothemoon Listing Packages</title>
 
 <style>
-body{margin:0;font-family:Arial;background:#0b0b0b;color:white;}
-.container{max-width:1000px;margin:auto;padding:60px 20px;}
-h1{text-align:center;font-size:38px;}
+body{
+margin:0;
+font-family:Arial;
+background:#0b0b0b;
+color:white;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:60px 20px;
+}
+
+h1{
+text-align:center;
+font-size:38px;
+margin-bottom:40px;
+}
+
+.row{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
 .card{
 background:rgba(255,255,255,0.05);
 border:1px solid rgba(255,255,255,0.1);
 padding:25px;
-margin:20px 0;
 border-radius:16px;
+width:340px;
+backdrop-filter:blur(10px);
+text-align:left;
+transition:0.3s;
 }
-.price{color:gold;font-weight:bold;}
-.btn{
-display:inline-block;
+
+.card:hover{
+transform:translateY(-5px);
+border-color:gold;
+}
+
+.title{
+font-size:20px;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.feature{
+font-size:13px;
+padding:6px 0;
+border-bottom:1px solid rgba(255,255,255,0.05);
+display:flex;
+justify-content:space-between;
+}
+
+.price{
+color:gold;
+font-weight:bold;
 margin-top:10px;
-padding:10px 14px;
+font-size:18px;
+}
+
+.btn{
+display:block;
+margin-top:15px;
+padding:10px;
 background:gold;
 color:black;
+font-weight:bold;
+text-align:center;
 border-radius:8px;
 text-decoration:none;
-font-weight:bold;
 }
 </style>
-
 </head>
 
 <body>
@@ -37,21 +89,40 @@ font-weight:bold;
 
 <h1>🔵 Tothemoon Listing Packages</h1>
 
+<div class="row">
+
+<!-- BASIC -->
 <div class="card">
-<h2>Basic</h2>
-<div class="price">$10,000</div>
-<p>Listing, PR, marketing support, MM access</p>
+<div class="title">Basic ($10,000)</div>
+
+<div class="feature"><span>Token Listing</span><span>✓</span></div>
+<div class="feature"><span>Market Maker Access</span><span>✓</span></div>
+<div class="feature"><span>Listing Strategy Support</span><span>✓</span></div>
+<div class="feature"><span>24/7 Support</span><span>✓</span></div>
+<div class="feature"><span>Liquidity Integration</span><span>✓</span></div>
+<div class="feature"><span>Social Promotion</span><span>✓</span></div>
+<div class="feature"><span>Blog Press Release</span><span>✓</span></div>
+<div class="feature"><span>Email Campaign</span><span>✓</span></div>
+<div class="feature"><span>Push Notifications</span><span>✓</span></div>
+
 <a class="btn" href="https://t.me/cryptowizzard13">Get Started</a>
 </div>
 
+<!-- ADVANCED -->
 <div class="card">
-<h2>Advanced</h2>
-<div class="price">$12,000</div>
-<p>Trading campaigns, AMA, giveaways, airdrops</p>
+<div class="title">Advanced ($12,000)</div>
+
+<div class="feature"><span>Everything in Basic</span><span>✓</span></div>
+<div class="feature"><span>Trading Competition</span><span>✓</span></div>
+<div class="feature"><span>Giveaway Campaign</span><span>✓</span></div>
+<div class="feature"><span>Airdrop Campaign</span><span>✓</span></div>
+<div class="feature"><span>AMA Sessions</span><span>✓</span></div>
+<div class="feature"><span>External PR</span><span>✓</span></div>
+
 <a class="btn" href="https://t.me/cryptowizzard13">Get Started</a>
 </div>
 
-<a class="btn" href="index.html">← Back</a>
+</div>
 
 </div>
 
