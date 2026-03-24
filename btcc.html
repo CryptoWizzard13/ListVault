@@ -6,29 +6,81 @@
 <title>BTCC Listing Packages</title>
 
 <style>
-body{margin:0;font-family:Arial;background:#0b0b0b;color:white;}
-.container{max-width:1000px;margin:auto;padding:60px 20px;}
-h1{text-align:center;font-size:38px;}
+body{
+margin:0;
+font-family:Arial;
+background:#0b0b0b;
+color:white;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:60px 20px;
+}
+
+h1{
+text-align:center;
+font-size:38px;
+margin-bottom:40px;
+}
+
+.row{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
 .card{
 background:rgba(255,255,255,0.05);
 border:1px solid rgba(255,255,255,0.1);
 padding:25px;
-margin:20px 0;
 border-radius:16px;
+width:340px;
+backdrop-filter:blur(10px);
+text-align:left;
+transition:0.3s;
 }
-.price{color:gold;font-weight:bold;}
-.btn{
-display:inline-block;
+
+.card:hover{
+transform:translateY(-5px);
+border-color:gold;
+}
+
+.title{
+font-size:20px;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.feature{
+font-size:13px;
+padding:6px 0;
+border-bottom:1px solid rgba(255,255,255,0.05);
+display:flex;
+justify-content:space-between;
+}
+
+.price{
+color:gold;
+font-weight:bold;
 margin-top:10px;
-padding:10px 14px;
+font-size:18px;
+}
+
+.btn{
+display:block;
+margin-top:15px;
+padding:10px;
 background:gold;
 color:black;
+font-weight:bold;
+text-align:center;
 border-radius:8px;
 text-decoration:none;
-font-weight:bold;
 }
 </style>
-
 </head>
 
 <body>
@@ -37,28 +89,55 @@ font-weight:bold;
 
 <h1>🔷 BTCC Listing Packages</h1>
 
+<div class="row">
+
+<!-- BASIC -->
 <div class="card">
-<h2>Basic</h2>
-<div class="price">$8,000</div>
-<p>Announcement, social promotion, spot listing</p>
-<a class="btn" href="https://t.me/cryptowizzard13">Get Started</a>
+<div class="title">Basic ($8,000)</div>
+
+<div class="feature"><span>Official Announcement</span><span>✓</span></div>
+<div class="feature"><span>Social Media Posts</span><span>✓</span></div>
+<div class="feature"><span>Spot Listing</span><span>✓</span></div>
+<div class="feature"><span>Multi-language Outreach</span><span>1 language</span></div>
+<div class="feature"><span>Email Marketing</span><span>1 language</span></div>
+<div class="feature"><span>Press Distribution</span><span>100+ sites</span></div>
+<div class="feature"><span>MM Account</span><span>1</span></div>
+
+<a class="btn" href="https://t.me/cryptowizzard13">Apply</a>
 </div>
 
+<!-- STANDARD -->
 <div class="card">
-<h2>Standard</h2>
-<div class="price">$10,000</div>
-<p>Banners, AMA, influencers, multi-language marketing</p>
-<a class="btn" href="https://t.me/cryptowizzard13">Get Started</a>
+<div class="title">Standard ($10,000)</div>
+
+<div class="feature"><span>Everything in Basic</span><span>✓</span></div>
+<div class="feature"><span>Website & App Banners</span><span>✓</span></div>
+<div class="feature"><span>Push Notifications</span><span>✓</span></div>
+<div class="feature"><span>Multi-language Outreach</span><span>5 languages</span></div>
+<div class="feature"><span>AMA Sessions</span><span>1</span></div>
+<div class="feature"><span>Influencers</span><span>3+</span></div>
+<div class="feature"><span>MM Accounts</span><span>2</span></div>
+
+<a class="btn" href="https://t.me/cryptowizzard13">Apply</a>
 </div>
 
+<!-- PREMIUM -->
 <div class="card">
-<h2>Premium</h2>
-<div class="price">$15,000</div>
-<p>Global campaigns, SEO, offline events, top-tier exposure</p>
-<a class="btn" href="https://t.me/cryptowizzard13">Get Started</a>
+<div class="title">Premium ($15,000)</div>
+
+<div class="feature"><span>Everything in Standard</span><span>✓</span></div>
+<div class="feature"><span>Global Campaign</span><span>✓</span></div>
+<div class="feature"><span>Futures Listing</span><span>Top 10 CEX only</span></div>
+<div class="feature"><span>Email Marketing</span><span>18 languages</span></div>
+<div class="feature"><span>AMA Sessions</span><span>2</span></div>
+<div class="feature"><span>YouTube Promotion</span><span>2 KOLs</span></div>
+<div class="feature"><span>Influencers</span><span>8+</span></div>
+<div class="feature"><span>Offline Events</span><span>✓</span></div>
+
+<a class="btn" href="https://t.me/cryptowizzard13">Apply</a>
 </div>
 
-<a class="btn" href="index.html">← Back</a>
+</div>
 
 </div>
 
