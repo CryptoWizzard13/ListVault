@@ -1,144 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Coinstore Listing</title>
-
-<style>
-body{
-margin:0;
-font-family:Arial;
-background:#0b0b0b;
-color:white;
-}
-
-.container{
-max-width:1200px;
-margin:auto;
-padding:60px 20px;
-}
-
-h1{text-align:center;font-size:38px;margin-bottom:40px;}
-
-.row{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.card{
-background:rgba(255,255,255,0.05);
-border:1px solid rgba(255,255,255,0.1);
-padding:25px;
-border-radius:16px;
-width:340px;
-backdrop-filter:blur(10px);
-}
-
-.title{
-font-size:20px;
-font-weight:bold;
-}
-
-.price{
-color:gold;
-font-weight:bold;
-margin:10px 0;
-}
-
-.feature{
-font-size:13px;
-padding:5px 0;
-border-bottom:1px solid rgba(255,255,255,0.05);
-display:flex;
-justify-content:space-between;
-}
-
-.btn{
-display:block;
-margin-top:15px;
-padding:10px;
-background:gold;
-color:black;
-font-weight:bold;
-text-align:center;
-border-radius:8px;
-text-decoration:none;
-}
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <div class="container">
 
-<h1>🟣 Coinstore Listing Packages</h1>
+<a class="back" href="index.html">← Back</a>
+
+<h1>Coinstore Packages</h1>
 
 <div class="row">
 
-<!-- LITE -->
 <div class="card">
 <div class="title">Lite Listing Package</div>
-
-<div class="feature"><span>Spot Listing</span><span>✓</span></div>
-<div class="feature"><span>Trading Pair USDT/BTC/ETH/BNB</span><span>✓</span></div>
-<div class="feature"><span>Listing Announcement</span><span>✓</span></div>
-<div class="feature"><span>App & Web Visibility</span><span>Limited</span></div>
-<div class="feature"><span>Community Campaigns</span><span>Basic</span></div>
-<div class="feature"><span>PR Distribution</span><span>Limited</span></div>
-<div class="feature"><span>Market Making</span><span>Basic</span></div>
+<table class="table">
+<tr><td>Spot Listing</td><td>✓</td></tr>
+<tr><td>Trading Pair USDT / BTC / ETH / BNB</td><td>✓</td></tr>
+<tr><td>Listing Announcement</td><td>✓</td></tr>
+<tr><td>App & Web Visibility</td><td>Limited exposure</td></tr>
+<tr><td>Community Campaigns</td><td>Basic engagement</td></tr>
+<tr><td>PR Distribution</td><td>Limited media</td></tr>
+<tr><td>Market Making</td><td>Basic liquidity</td></tr>
+</table>
 <div class="price">Custom / On Request</div>
-
-<a class="btn" href="https://t.me/cryptowizzard13">Apply</a>
+<a class="btn" href="https://t.me/cryptowizzard13">Get Started</a>
 </div>
 
-<!-- BASIC -->
 <div class="card">
-<div class="title">Brand Upgrade Basic</div>
-
-<div class="feature"><span>Market Making Account</span><span>1</span></div>
-<div class="feature"><span>App Carousel Banner</span><span>✓</span></div>
-<div class="feature"><span>Web Banner</span><span>✓</span></div>
-<div class="feature"><span>PR Articles</span><span>✓</span></div>
-<div class="feature"><span>Global PR Bundle</span><span>50+ media</span></div>
-<div class="feature"><span>KOL Promotion</span><span>2</span></div>
-
+<div class="title">Basic</div>
+<table class="table">
+<tr><td>Spot Listing</td><td>✓</td></tr>
+<tr><td>Market Making Account</td><td>1</td></tr>
+<tr><td>PR Articles</td><td>✓</td></tr>
+<tr><td>KOL Promotion</td><td>2</td></tr>
+<tr><td>Global PR Bundle</td><td>50+ media</td></tr>
+<tr><td>Trading Competition</td><td>✓</td></tr>
+<tr><td>Staking Campaign</td><td>7/15/30 days</td></tr>
+<tr><td>Price</td><td>18,000 USDT</td></tr>
+</table>
 <div class="price">$18,000</div>
-<a class="btn" href="https://t.me/cryptowizzard13">Apply</a>
+<a class="btn" href="https://t.me/cryptowizzard13">Get Started</a>
 </div>
 
-<!-- STANDARD -->
 <div class="card">
 <div class="title">Standard</div>
-
-<div class="feature"><span>Everything in Basic</span><span>✓</span></div>
-<div class="feature"><span>Extended Media Coverage</span><span>150+ outlets</span></div>
-<div class="feature"><span>KOLs</span><span>2–3</span></div>
-<div class="feature"><span>Trading Competition</span><span>✓</span></div>
-<div class="feature"><span>Staking Campaign</span><span>15–30 days</span></div>
-
+<table class="table">
+<tr><td>Everything in Basic</td><td>✓</td></tr>
+<tr><td>Extended Media Coverage</td><td>150+ outlets</td></tr>
+<tr><td>KOL Promotion</td><td>2–3</td></tr>
+<tr><td>Affiliate Rebate</td><td>40%</td></tr>
+<tr><td>Price</td><td>22,000 USDT</td></tr>
+</table>
 <div class="price">$22,000</div>
-<a class="btn" href="https://t.me/cryptowizzard13">Apply</a>
+<a class="btn" href="https://t.me/cryptowizzard13">Get Started</a>
 </div>
 
-<!-- PREMIUM -->
 <div class="card">
 <div class="title">Premium</div>
-
-<div class="feature"><span>Premium Media Coverage</span><span>Cointelegraph etc</span></div>
-<div class="feature"><span>KOLs</span><span>4+</span></div>
-<div class="feature"><span>Affiliate Rebate</span><span>50%</span></div>
-<div class="feature"><span>Custom Campaigns</span><span>Included</span></div>
-
+<table class="table">
+<tr><td>Everything in Standard</td><td>✓</td></tr>
+<tr><td>Premium Media Coverage</td><td>Cointelegraph / U.Today</td></tr>
+<tr><td>KOL Promotion</td><td>4+</td></tr>
+<tr><td>Affiliate Rebate</td><td>50%</td></tr>
+<tr><td>Price</td><td>28,000 USDT</td></tr>
+</table>
 <div class="price">$28,000</div>
-<a class="btn" href="https://t.me/cryptowizzard13">Apply</a>
+<a class="btn" href="https://t.me/cryptowizzard13">Get Started</a>
 </div>
 
 </div>
-
 </div>
 
 </body>
