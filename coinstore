@@ -3,45 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Coinstore Listing</title>
+<title>Coinstore Listing Packages</title>
 
 <style>
-body{
+body {
 margin:0;
 font-family:Arial;
 background:#0b0b0b;
 color:white;
 }
 
-.container{
+.container {
 max-width:1100px;
 margin:auto;
 padding:60px 20px;
 }
 
-h1{text-align:center;}
+h1 {
+text-align:center;
+font-size:38px;
+}
 
-.table{
+.section {
 background:rgba(255,255,255,0.05);
 border:1px solid rgba(255,255,255,0.1);
-padding:20px;
+padding:25px;
+margin:25px 0;
 border-radius:16px;
-margin:20px 0;
+backdrop-filter:blur(10px);
 }
 
-.row{
+.row {
 display:flex;
 justify-content:space-between;
-padding:8px 0;
+padding:6px 0;
 border-bottom:1px solid rgba(255,255,255,0.05);
+font-size:14px;
 }
 
-.price{
+.price {
 color:gold;
 font-weight:bold;
+margin-top:10px;
 }
 
-.btn{
+.btn {
 display:inline-block;
 margin-top:15px;
 padding:10px 14px;
@@ -52,7 +58,6 @@ text-decoration:none;
 font-weight:bold;
 }
 </style>
-
 </head>
 
 <body>
@@ -61,31 +66,37 @@ font-weight:bold;
 
 <h1>🟣 Coinstore Listing Packages</h1>
 
-<div class="table">
-<h2>Lite Package</h2>
+<div class="section">
+<h2>Lite Listing Package</h2>
 <div class="row"><span>Spot Listing</span><span>✓</span></div>
 <div class="row"><span>Trading Pairs</span><span>✓</span></div>
-<div class="row"><span>PR + Campaigns</span><span>Basic</span></div>
+<div class="row"><span>PR Distribution</span><span>Limited</span></div>
 <div class="row"><span>Market Making</span><span>Basic</span></div>
-<div class="row"><span class="price">Custom Pricing</span></div>
+<div class="price">Custom Pricing</div>
 <a class="btn" href="https://t.me/cryptowizzard13">Apply</a>
 </div>
 
-<div class="table">
-<h2>Brand Upgrade Basic</h2>
-<div class="row"><span>Visibility</span><span>App + Web</span></div>
-<div class="row"><span>PR Coverage</span><span>50+ media</span></div>
-<div class="row"><span>KOLs</span><span>2</span></div>
-<div class="row"><span class="price">$18,000</span></div>
+<div class="section">
+<h2>Brand Upgrade (Basic / Standard / Premium)</h2>
+
+<div class="row"><span>Spot Listing</span><span>✓</span></div>
+<div class="row"><span>PR Coverage</span><span>50–150+ media</span></div>
+<div class="row"><span>KOL Campaigns</span><span>2–4+</span></div>
+<div class="row"><span>Trading Competition</span><span>Included</span></div>
+<div class="row"><span>Staking Campaign</span><span>7–30 days</span></div>
+<div class="row"><span>Global PR Bundle</span><span>Yes</span></div>
+<div class="price">$18,000 – $28,000</div>
 <a class="btn" href="https://t.me/cryptowizzard13">Apply</a>
 </div>
 
-<div class="table">
-<h2>Premium</h2>
-<div class="row"><span>Global PR</span><span>150+ outlets</span></div>
-<div class="row"><span>KOLs</span><span>4+</span></div>
-<div class="row"><span>Campaigns</span><span>Full suite</span></div>
-<div class="row"><span class="price">$28,000</span></div>
+<div class="section">
+<h2>IEO Service Package</h2>
+
+<div class="row"><span>Launchpad Access</span><span>✓</span></div>
+<div class="row"><span>AMA + Events</span><span>Full Suite</span></div>
+<div class="row"><span>KOL Promotion</span><span>8–12 Influencers</span></div>
+<div class="row"><span>VC Introductions</span><span>Included</span></div>
+<div class="price">$20K – $60K+</div>
 <a class="btn" href="https://t.me/cryptowizzard13">Apply</a>
 </div>
 
