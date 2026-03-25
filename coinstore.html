@@ -1,7 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Coinstore Packages</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#0b0b0b;
+color:white;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:60px 20px;
+}
+
+h1{
+text-align:center;
+margin-bottom:40px;
+font-size:36px;
+}
+
+.row{
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+justify-content:center;
+align-items:stretch;
+}
+
+.card{
+width:350px;
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.1);
+border-radius:16px;
+padding:20px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+backdrop-filter:blur(10px);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:gold;
+}
+
+.title{
+font-size:18px;
+font-weight:bold;
+margin-bottom:12px;
+text-align:center;
+}
+
+.table{
+width:100%;
+border-collapse:collapse;
+font-size:12px;
+}
+
+.table td{
+padding:6px;
+border-bottom:1px solid rgba(255,255,255,0.08);
+vertical-align:top;
+}
+
+.price{
+margin-top:15px;
+font-size:18px;
+color:gold;
+font-weight:bold;
+text-align:center;
+}
+
+.btn{
+display:block;
+text-align:center;
+padding:12px;
+background:gold;
+color:black;
+font-weight:bold;
+border-radius:10px;
+margin-top:15px;
+text-decoration:none;
+}
+
+.back{
+display:inline-block;
+margin-bottom:20px;
+padding:8px 12px;
+background:#222;
+border-radius:8px;
+color:white;
+text-decoration:none;
+}
+</style>
+
 </head>
 <body>
 
@@ -13,7 +111,7 @@
 
 <div class="row">
 
-<!-- LITE PACKAGE -->
+<!-- LITE -->
 <div class="card">
 <div class="title">Lite Listing ($10,000)</div>
 
@@ -152,6 +250,7 @@
 </div>
 
 </div>
+
 </div>
 
 </body>
