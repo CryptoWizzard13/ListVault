@@ -24,14 +24,17 @@ margin-bottom:40px;
 font-size:34px;
 }
 
-/* TABLE BASE */
+/* TABLE */
 table{
 width:100%;
 border-collapse:collapse;
 background:#111;
 border-radius:12px;
 overflow:hidden;
-box-shadow:0 0 25px rgba(255,215,0,0.06);
+
+/* 🔥 ADDED BORDER GLOW */
+border:1px solid rgba(255,215,0,0.25);
+box-shadow:0 0 35px rgba(255,215,0,0.08);
 }
 
 /* HEADER */
@@ -39,16 +42,18 @@ th{
 background:#0a0a0a;
 font-size:15px;
 padding:12px;
-border:1px solid #222;
+border:1px solid rgba(255,215,0,0.15);
 text-align:center;
+color:gold; /* 🔥 PACKAGE HEADER COLOR FIX */
 }
 
 /* CELLS */
 td{
 padding:12px;
-border:1px solid #222;
+border:1px solid rgba(255,215,0,0.12); /* 🔥 GOLD GRID LINES */
 font-size:13px;
 text-align:center;
+color:white;
 }
 
 /* LEFT ALIGN FIRST TWO COLUMNS ONLY */
@@ -59,18 +64,7 @@ text-align:left;
 
 /* ROW HOVER */
 tr:hover{
-background:#1a1a1a;
-}
-
-/* UNIFORM COLUMN STYLE */
-td, th{
-width:auto;
-}
-
-/* STANDARD COLUMN (SUBTLE HIGHLIGHT ONLY) */
-th:nth-child(5),
-td:nth-child(5){
-background:rgba(255,215,0,0.03);
+background:rgba(255,215,0,0.04);
 }
 
 /* PRICE ROW */
@@ -79,6 +73,7 @@ font-weight:bold;
 font-size:16px;
 color:gold;
 background:#0f0f0f;
+border:1px solid rgba(255,215,0,0.25);
 }
 
 /* BUTTON */
@@ -93,7 +88,7 @@ border-radius:8px;
 text-decoration:none;
 }
 
-/* BACK BUTTON */
+/* BACK */
 .back{
 display:inline-block;
 margin-bottom:20px;
@@ -102,13 +97,6 @@ background:#222;
 border-radius:8px;
 color:white;
 text-decoration:none;
-}
-
-/* FIX: KEEP TABLE CLEAN ON SMALL SCREENS */
-@media (max-width: 1100px){
-table{
-font-size:11px;
-}
 }
 </style>
 
@@ -135,7 +123,7 @@ font-size:11px;
 
 <tr><td>Spot Listing</td><td>Exchange listing</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
 <tr><td>Trading Pair</td><td>USDT / BTC / ETH / BNB</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Market Making Account</td><td>0 fee MM</td><td>Basic</td><td>1</td><td>1–2</td><td>1–2</td></tr></tr>
+<tr><td>Market Making Account</td><td>0 fee MM</td><td>Basic</td><td>1</td><td>1–2</td><td>1–2</td></tr>
 
 <tr><td>Listing Announcement</td><td>Social media exposure</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
 <tr><td>Performance Highlights</td><td>Platform visibility</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
@@ -148,6 +136,7 @@ font-size:11px;
 <tr><td>Discover Page Feature</td><td>Platform placement</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
 
 <tr><td>PR Article Draft</td><td>Content creation</td><td>Limited</td><td>✓</td><td>✓</td><td>✓</td></tr>
+
 <tr><td>Coinstore Blog & Medium</td><td>Internal PR</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
 
 <tr><td>External Publishers</td><td>Media distribution</td><td>Limited</td><td>✓</td><td>✓</td><td>✓</td></tr>
