@@ -24,31 +24,34 @@ margin-bottom:40px;
 font-size:34px;
 }
 
-/* TABLE */
+/* TABLE BASE */
 table{
 width:100%;
 border-collapse:collapse;
 background:#111;
 border-radius:12px;
 overflow:hidden;
-box-shadow:0 0 30px rgba(255,215,0,0.05);
+box-shadow:0 0 25px rgba(255,215,0,0.06);
 }
 
-th, td{
-padding:12px;
-border:1px solid #222;
-font-size:13px;
-}
-
+/* HEADER */
 th{
 background:#0a0a0a;
 font-size:15px;
-}
-
-td{
+padding:12px;
+border:1px solid #222;
 text-align:center;
 }
 
+/* CELLS */
+td{
+padding:12px;
+border:1px solid #222;
+font-size:13px;
+text-align:center;
+}
+
+/* LEFT ALIGN FIRST TWO COLUMNS ONLY */
 td:first-child,
 td:nth-child(2){
 text-align:left;
@@ -59,17 +62,23 @@ tr:hover{
 background:#1a1a1a;
 }
 
-/* HIGHLIGHT STANDARD */
-th:nth-child(5),
-td:nth-child(5){
-background:rgba(255,215,0,0.05);
+/* UNIFORM COLUMN STYLE */
+td, th{
+width:auto;
 }
 
-/* PRICE */
+/* STANDARD COLUMN (SUBTLE HIGHLIGHT ONLY) */
+th:nth-child(5),
+td:nth-child(5){
+background:rgba(255,215,0,0.03);
+}
+
+/* PRICE ROW */
 .price-row td{
 font-weight:bold;
 font-size:16px;
 color:gold;
+background:#0f0f0f;
 }
 
 /* BUTTON */
@@ -84,7 +93,7 @@ border-radius:8px;
 text-decoration:none;
 }
 
-/* BACK */
+/* BACK BUTTON */
 .back{
 display:inline-block;
 margin-bottom:20px;
@@ -94,9 +103,17 @@ border-radius:8px;
 color:white;
 text-decoration:none;
 }
+
+/* FIX: KEEP TABLE CLEAN ON SMALL SCREENS */
+@media (max-width: 1100px){
+table{
+font-size:11px;
+}
+}
 </style>
 
 </head>
+
 <body>
 
 <div class="container">
@@ -112,13 +129,13 @@ text-decoration:none;
 <th>Description</th>
 <th>Lite</th>
 <th>Basic</th>
-<th>Standard ⭐</th>
+<th>Standard</th>
 <th>Premium</th>
 </tr>
 
 <tr><td>Spot Listing</td><td>Exchange listing</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
 <tr><td>Trading Pair</td><td>USDT / BTC / ETH / BNB</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Market Making Account</td><td>0 fee MM</td><td>Basic</td><td>1</td><td>1–2</td><td>1–2</td></tr>
+<tr><td>Market Making Account</td><td>0 fee MM</td><td>Basic</td><td>1</td><td>1–2</td><td>1–2</td></tr></tr>
 
 <tr><td>Listing Announcement</td><td>Social media exposure</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
 <tr><td>Performance Highlights</td><td>Platform visibility</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
@@ -127,31 +144,37 @@ text-decoration:none;
 <tr><td>Web Carousel Banner</td><td>Web exposure</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
 <tr><td>Trending Trading Pair</td><td>New user exposure</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
 
-<tr><td>App & Web Pop-ups</td><td>High visibility</td><td>Limited exposure</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>App & Web Pop-ups</td><td>High visibility</td><td>Limited</td><td>✓</td><td>✓</td><td>✓</td></tr>
 <tr><td>Discover Page Feature</td><td>Platform placement</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
 
-<tr><td>PR Article Draft</td><td>Content creation</td><td>Limited media</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>PR Article Draft</td><td>Content creation</td><td>Limited</td><td>✓</td><td>✓</td><td>✓</td></tr>
 <tr><td>Coinstore Blog & Medium</td><td>Internal PR</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>External Publishers</td><td>Media distribution</td><td>Limited media</td><td>✓</td><td>✓</td><td>✓</td></tr>
+
+<tr><td>External Publishers</td><td>Media distribution</td><td>Limited</td><td>✓</td><td>✓</td><td>✓</td></tr>
 
 <tr><td>Global PR Bundle</td><td>50+ media</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
 
 <tr><td>Premium Media Coverage</td><td>Cointelegraph / U.Today / Decrypt</td><td>✗</td><td>✗</td><td>✓</td><td>✓</td></tr>
+
 <tr><td>Extended Media Coverage</td><td>150+ outlets</td><td>✗</td><td>✗</td><td>✓</td><td>✓</td></tr>
 
-<tr><td>Trading Competition</td><td>Engagement campaign</td><td>Basic engagement</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Trading Competition</td><td>Engagement campaign</td><td>Basic</td><td>✓</td><td>✓</td><td>✓</td></tr>
+
 <tr><td>Staking Campaign</td><td>7 / 15 / 30 days</td><td>Basic</td><td>✓</td><td>✓</td><td>✓</td></tr>
 
 <tr><td>X Space AMA</td><td>Live session</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
+
 <tr><td>Telegram AMA</td><td>Community session</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
 
 <tr><td>Lucky Spin Campaign</td><td>Rewards campaign</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
+
 <tr><td>Quiz & Prediction Events</td><td>Engagement tools</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
 
 <tr><td>KOL Promotion</td><td>Influencer marketing</td><td>✗</td><td>2</td><td>2–3</td><td>4+</td></tr>
+
 <tr><td>KOL Shoutouts</td><td>Total reach</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
 
-<tr><td>Market Making</td><td>Liquidity support</td><td>Basic liquidity</td><td>2 months</td><td>2 months</td><td>2 months</td></tr>
+<tr><td>Market Making</td><td>Liquidity support</td><td>Basic</td><td>2 months</td><td>2 months</td><td>2 months</td></tr>
 
 <tr><td>Affiliate Rebate</td><td>Fee discount</td><td>✗</td><td>40%</td><td>40%</td><td>50%</td></tr>
 
@@ -161,7 +184,6 @@ text-decoration:none;
 
 <tr><td>Panel Invitations</td><td>Events</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
 
-<!-- PRICE -->
 <tr class="price-row">
 <td>Price (USDT)</td>
 <td></td>
@@ -171,14 +193,13 @@ text-decoration:none;
 <td>28,000</td>
 </tr>
 
-<!-- CTA -->
 <tr>
 <td></td>
 <td></td>
-<td><a class="btn" href="https://t.me/cryptowizzard13">Get Started</a></td>
-<td><a class="btn" href="https://t.me/cryptowizzard13">Get Started</a></td>
-<td><a class="btn" href="https://t.me/cryptowizzard13">Get Started</a></td>
-<td><a class="btn" href="https://t.me/cryptowizzard13">Get Started</a></td>
+<td><a class="btn" href="#">Get Started</a></td>
+<td><a class="btn" href="#">Get Started</a></td>
+<td><a class="btn" href="#">Get Started</a></td>
+<td><a class="btn" href="#">Get Started</a></td>
 </tr>
 
 </table>
