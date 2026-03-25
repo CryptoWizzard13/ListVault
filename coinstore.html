@@ -10,10 +10,11 @@ margin:0;
 font-family:Arial, sans-serif;
 background:#0b0b0b;
 color:white;
+overflow-x:auto;
 }
 
 .container{
-max-width:1200px;
+max-width:1400px;
 margin:auto;
 padding:60px 20px;
 }
@@ -24,16 +25,20 @@ margin-bottom:40px;
 font-size:36px;
 }
 
+/* FORCE HORIZONTAL */
 .row{
 display:flex;
-flex-wrap:wrap;
+flex-wrap:nowrap;
 gap:25px;
-justify-content:center;
+justify-content:flex-start;
 align-items:stretch;
+overflow-x:auto;
+padding-bottom:10px;
 }
 
+/* CARD */
 .card{
-width:350px;
+min-width:350px;
 background:rgba(255,255,255,0.05);
 border:1px solid rgba(255,255,255,0.1);
 border-radius:16px;
@@ -57,6 +62,7 @@ margin-bottom:12px;
 text-align:center;
 }
 
+/* TABLE */
 .table{
 width:100%;
 border-collapse:collapse;
@@ -69,14 +75,23 @@ border-bottom:1px solid rgba(255,255,255,0.08);
 vertical-align:top;
 }
 
+/* PRICE + BUTTON WRAP */
+.cta{
+margin-top:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+/* PRICE */
 .price{
-margin-top:15px;
-font-size:18px;
+font-size:20px;
 color:gold;
 font-weight:bold;
 text-align:center;
 }
 
+/* BUTTON */
 .btn{
 display:block;
 text-align:center;
@@ -85,10 +100,10 @@ background:gold;
 color:black;
 font-weight:bold;
 border-radius:10px;
-margin-top:15px;
 text-decoration:none;
 }
 
+/* BACK BUTTON */
 .back{
 display:inline-block;
 margin-bottom:20px;
@@ -113,7 +128,7 @@ text-decoration:none;
 
 <!-- LITE -->
 <div class="card">
-<div class="title">Lite Listing ($10,000)</div>
+<div class="title">Lite Listing</div>
 
 <table class="table">
 <tr><td>Spot Listing</td><td>Exchange listing</td><td>✓</td></tr>
@@ -125,13 +140,15 @@ text-decoration:none;
 <tr><td>Market Making</td><td>Basic liquidity</td><td>✓</td></tr>
 </table>
 
+<div class="cta">
 <div class="price">$10,000</div>
 <a class="btn" href="https://t.me/cryptowizzard13">Get Started</a>
+</div>
 </div>
 
 <!-- BASIC -->
 <div class="card">
-<div class="title">Basic ($18,000)</div>
+<div class="title">Basic</div>
 
 <table class="table">
 <tr><td>Spot Listing</td><td>Exchange listing</td><td>✓</td></tr>
@@ -165,13 +182,15 @@ text-decoration:none;
 <tr><td>Panel Invitations</td><td>Events</td><td>✓</td></tr>
 </table>
 
+<div class="cta">
 <div class="price">$18,000</div>
 <a class="btn" href="https://t.me/cryptowizzard13">Get Started</a>
+</div>
 </div>
 
 <!-- STANDARD -->
 <div class="card">
-<div class="title">Standard ($22,000)</div>
+<div class="title">Standard</div>
 
 <table class="table">
 <tr><td>Spot Listing</td><td>Exchange listing</td><td>✓</td></tr>
@@ -190,63 +209,34 @@ text-decoration:none;
 <tr><td>Global PR Bundle</td><td>50+ media</td><td>✓</td></tr>
 <tr><td>Premium Media Coverage</td><td>Cointelegraph / U.Today / Decrypt</td><td>✓</td></tr>
 <tr><td>Extended Media Coverage</td><td>150+ outlets</td><td>✓</td></tr>
-<tr><td>Trading Competition</td><td>Engagement campaign</td><td>✓</td></tr>
-<tr><td>Staking Campaign</td><td>7 / 15 / 30 days</td><td>✓</td></tr>
-<tr><td>X Space AMA</td><td>Live session</td><td>✓</td></tr>
-<tr><td>Telegram AMA</td><td>Community session</td><td>✓</td></tr>
-<tr><td>Lucky Spin Campaign</td><td>Rewards campaign</td><td>✓</td></tr>
-<tr><td>Quiz & Prediction Events</td><td>Engagement tools</td><td>✓</td></tr>
-<tr><td>KOL Promotion</td><td>Influencer marketing</td><td>2–3</td></tr>
-<tr><td>KOL Shoutouts</td><td>Total reach</td><td>✓</td></tr>
-<tr><td>Market Making</td><td>Liquidity support</td><td>2 months</td></tr>
-<tr><td>Affiliate Rebate</td><td>Fee discount</td><td>40%</td></tr>
-<tr><td>Fee Waiver</td><td>Seasonal campaigns</td><td>✓</td></tr>
-<tr><td>Custom Campaigns</td><td>Gleam / TaskOn / QuestN</td><td>✓</td></tr>
-<tr><td>Panel Invitations</td><td>Events</td><td>✓</td></tr>
+<tr><td>KOL Promotion</td><td>2–3</td></tr>
+<tr><td>Affiliate Rebate</td><td>40%</td></tr>
 </table>
 
+<div class="cta">
 <div class="price">$22,000</div>
 <a class="btn" href="https://t.me/cryptowizzard13">Get Started</a>
+</div>
 </div>
 
 <!-- PREMIUM -->
 <div class="card">
-<div class="title">Premium ($28,000)</div>
+<div class="title">Premium</div>
 
 <table class="table">
 <tr><td>Spot Listing</td><td>Exchange listing</td><td>✓</td></tr>
 <tr><td>Trading Pair</td><td>USDT / BTC / ETH / BNB</td><td>✓</td></tr>
 <tr><td>Market Making Account</td><td>0 fee MM</td><td>1–2</td></tr>
-<tr><td>Listing Announcement</td><td>Social media exposure</td><td>✓</td></tr>
-<tr><td>Performance Highlights</td><td>Platform visibility</td><td>✓</td></tr>
-<tr><td>App Carousel Banner</td><td>App exposure</td><td>✓</td></tr>
-<tr><td>Web Carousel Banner</td><td>Web exposure</td><td>✓</td></tr>
-<tr><td>Trending Trading Pair</td><td>New user exposure</td><td>✓</td></tr>
-<tr><td>App & Web Pop-ups</td><td>High visibility</td><td>✓</td></tr>
-<tr><td>Discover Page Feature</td><td>Platform placement</td><td>✓</td></tr>
-<tr><td>PR Article Draft</td><td>Content creation</td><td>✓</td></tr>
-<tr><td>Coinstore Blog & Medium</td><td>Internal PR</td><td>✓</td></tr>
-<tr><td>External Publishers</td><td>Media distribution</td><td>✓</td></tr>
-<tr><td>Global PR Bundle</td><td>50+ media</td><td>✓</td></tr>
-<tr><td>Premium Media Coverage</td><td>Cointelegraph / U.Today / Decrypt</td><td>✓</td></tr>
-<tr><td>Extended Media Coverage</td><td>150+ outlets</td><td>✓</td></tr>
-<tr><td>Trading Competition</td><td>Engagement campaign</td><td>✓</td></tr>
-<tr><td>Staking Campaign</td><td>7 / 15 / 30 days</td><td>✓</td></tr>
-<tr><td>X Space AMA</td><td>Live session</td><td>✓</td></tr>
-<tr><td>Telegram AMA</td><td>Community session</td><td>✓</td></tr>
-<tr><td>Lucky Spin Campaign</td><td>Rewards campaign</td><td>✓</td></tr>
-<tr><td>Quiz & Prediction Events</td><td>Engagement tools</td><td>✓</td></tr>
-<tr><td>KOL Promotion</td><td>Influencer marketing</td><td>4+</td></tr>
-<tr><td>KOL Shoutouts</td><td>Total reach</td><td>✓</td></tr>
-<tr><td>Market Making</td><td>Liquidity support</td><td>2 months</td></tr>
-<tr><td>Affiliate Rebate</td><td>Fee discount</td><td>50%</td></tr>
-<tr><td>Fee Waiver</td><td>Seasonal campaigns</td><td>✓</td></tr>
-<tr><td>Custom Campaigns</td><td>Gleam / TaskOn / QuestN</td><td>✓</td></tr>
-<tr><td>Panel Invitations</td><td>Events</td><td>✓</td></tr>
+<tr><td>Premium Media Coverage</td><td>Cointelegraph / U.Today / Decrypt</td></tr>
+<tr><td>Extended Media Coverage</td><td>150+ outlets</td></tr>
+<tr><td>KOL Promotion</td><td>4+</td></tr>
+<tr><td>Affiliate Rebate</td><td>50%</td></tr>
 </table>
 
+<div class="cta">
 <div class="price">$28,000</div>
 <a class="btn" href="https://t.me/cryptowizzard13">Get Started</a>
+</div>
 </div>
 
 </div>
