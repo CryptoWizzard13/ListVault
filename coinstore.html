@@ -21,27 +21,29 @@ padding:50px 20px;
 h1{
 text-align:center;
 margin-bottom:40px;
+font-size:36px;
 }
 
-/* TABLE */
+/* TABLE DESIGN */
 table{
 width:100%;
 border-collapse:collapse;
-background:rgba(255,255,255,0.03);
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
 border-radius:12px;
 overflow:hidden;
 }
 
 th, td{
-padding:12px;
+padding:10px;
 text-align:center;
 border-bottom:1px solid rgba(255,255,255,0.08);
-font-size:13px;
+font-size:12px;
 }
 
 th{
 background:#111;
-font-size:16px;
+font-size:15px;
 }
 
 td:first-child{
@@ -52,6 +54,13 @@ font-weight:bold;
 /* HOVER */
 tr:hover{
 background:rgba(255,255,255,0.04);
+}
+
+/* HIGHLIGHT BEST */
+th:nth-child(4),
+td:nth-child(4){
+border-left:2px solid gold;
+border-right:2px solid gold;
 }
 
 /* PRICE */
@@ -65,7 +74,7 @@ font-weight:bold;
 .btn{
 display:inline-block;
 margin-top:10px;
-padding:10px 15px;
+padding:10px 14px;
 background:gold;
 color:black;
 font-weight:bold;
@@ -73,7 +82,7 @@ border-radius:8px;
 text-decoration:none;
 }
 
-/* BACK */
+/* BACK BUTTON */
 .back{
 display:inline-block;
 margin-bottom:20px;
@@ -100,39 +109,57 @@ text-decoration:none;
 <th>Services</th>
 <th>Lite</th>
 <th>Basic</th>
-<th>Standard</th>
+<th>Standard ⭐</th>
 <th>Premium</th>
 </tr>
 
 <tr><td>Spot Listing</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Trading Pair (USDT/BTC/ETH/BNB)</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Market Making Account</td><td>Basic</td><td>1</td><td>1–2</td><td>1–2</td></tr>
-<tr><td>Listing Announcement</td><td>Basic</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Performance Highlights</td><td>—</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>App Carousel Banner</td><td>—</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Web Carousel Banner</td><td>—</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Trending Trading Pair</td><td>—</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>App & Web Pop-ups</td><td>Limited</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Discover Page Feature</td><td>—</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>PR Articles</td><td>Limited</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>External Publishers</td><td>Limited</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Global PR Bundle</td><td>—</td><td>50+</td><td>50+</td><td>50+</td></tr>
-<tr><td>Premium Media Coverage</td><td>—</td><td>✗</td><td>✓</td><td>✓</td></tr>
-<tr><td>Extended Media Coverage</td><td>—</td><td>✗</td><td>✓</td><td>✓</td></tr>
-<tr><td>Trading Competition</td><td>Basic</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Staking Campaign</td><td>Basic</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>X Space AMA</td><td>—</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Telegram AMA</td><td>—</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Lucky Spin Campaign</td><td>—</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Quiz & Prediction</td><td>—</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>KOL Promotion</td><td>—</td><td>2</td><td>2–3</td><td>4+</td></tr>
-<tr><td>Market Making Duration</td><td>Basic</td><td>2 months</td><td>2 months</td><td>2 months</td></tr>
-<tr><td>Affiliate Rebate</td><td>—</td><td>40%</td><td>40%</td><td>50%</td></tr>
-<tr><td>Fee Waiver</td><td>—</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Custom Campaigns</td><td>—</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Panel Invitations</td><td>—</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Trading Pair</td><td>USDT/BTC/ETH/BNB</td><td>USDT/BTC/ETH/BNB</td><td>USDT/BTC/ETH/BNB</td><td>USDT/BTC/ETH/BNB</td></tr>
 
-<!-- PRICE ROW -->
+<tr><td>Market Making Account</td><td>Basic</td><td>1</td><td>1–2</td><td>1–2</td></tr>
+
+<tr><td>Listing Announcement</td><td>Basic</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Performance Highlights</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
+
+<tr><td>App Carousel Banner</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Web Carousel Banner</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Trending Trading Pair</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
+
+<tr><td>App & Web Pop-ups</td><td>Limited</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Discover Page Feature</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
+
+<tr><td>PR Article Draft</td><td>Limited</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Coinstore Blog & Medium</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>External Publishers</td><td>Limited</td><td>✓</td><td>✓</td><td>✓</td></tr>
+
+<tr><td>Global PR Bundle</td><td>✗</td><td>50+ media</td><td>50+ media</td><td>50+ media</td></tr>
+
+<tr><td>Premium Media Coverage</td><td>✗</td><td>✗</td><td>✓</td><td>✓</td></tr>
+<tr><td>Extended Media Coverage</td><td>✗</td><td>✗</td><td>150+ outlets</td><td>150+ outlets</td></tr>
+
+<tr><td>Trading Competition</td><td>Basic</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Staking Campaign</td><td>Basic</td><td>7/15/30 days</td><td>7/15/30 days</td><td>7/15/30 days</td></tr>
+
+<tr><td>X Space AMA</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Telegram AMA</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
+
+<tr><td>Lucky Spin Campaign</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Quiz & Prediction Events</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
+
+<tr><td>KOL Promotion</td><td>✗</td><td>2</td><td>2–3</td><td>4+</td></tr>
+<tr><td>KOL Shoutouts</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
+
+<tr><td>Market Making Duration</td><td>Basic</td><td>2 months</td><td>2 months</td><td>2 months</td></tr>
+
+<tr><td>Affiliate Rebate</td><td>✗</td><td>40%</td><td>40%</td><td>50%</td></tr>
+
+<tr><td>Fee Waiver</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
+
+<tr><td>Custom Campaigns</td><td>✗</td><td>Gleam / TaskOn / QuestN</td><td>Gleam / TaskOn / QuestN</td><td>Gleam / TaskOn / QuestN</td></tr>
+
+<tr><td>Panel Invitations</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
+
+<!-- PRICE -->
 <tr>
 <td><b>Price</b></td>
 <td class="price">$10,000</td>
@@ -141,7 +168,7 @@ text-decoration:none;
 <td class="price">$28,000</td>
 </tr>
 
-<!-- CTA ROW -->
+<!-- CTA -->
 <tr>
 <td></td>
 <td><a class="btn" href="https://t.me/cryptowizzard13">Get Started</a></td>
