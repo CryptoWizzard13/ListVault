@@ -37,6 +37,10 @@ border-radius:16px;
 width:320px;
 backdrop-filter:blur(10px);
 text-align:left;
+
+display:flex;
+flex-direction:column;
+height:100%;
 }
 
 .card:hover{
@@ -60,9 +64,13 @@ display:flex;
 justify-content:space-between;
 }
 
+  .btn{
+margin-top:auto;
+}
+  
 .btn{
 display:block;
-margin-top:15px;
+margin-top:auto;
 padding:10px;
 background:gold;
 color:black;
@@ -70,6 +78,23 @@ text-align:center;
 font-weight:bold;
 border-radius:8px;
 text-decoration:none;
+}
+
+  .exchange-icon{
+width:30px;
+height:30px;
+border-radius:50%;
+object-fit:cover;
+border:2px solid gold;
+}
+
+.title{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+font-size:38px;
+margin-bottom:40px;
 }
 </style>
 
@@ -79,7 +104,10 @@ text-decoration:none;
 
 <div class="container">
 
-<h1>🟡 WEEX Spot Deck</h1>
+<h1 class="title">
+    <img src="logos/weex.png" class="exchange-icon">
+    WEEX Spot Deck
+</h1>
 
 <div class="row">
 
