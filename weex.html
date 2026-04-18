@@ -27,6 +27,7 @@ display:flex;
 gap:20px;
 justify-content:center;
 flex-wrap:wrap;
+align-items:stretch;
 }
 
 .card{
@@ -38,11 +39,10 @@ width:320px;
 backdrop-filter:blur(10px);
 text-align:left;
 
+/* CRITICAL FIX */
 display:flex;
 flex-direction:column;
-height:100%;
-flex:1;
-max-width:320px;
+justify-content:space-between;
 }
 
 .card:hover{
@@ -65,14 +65,9 @@ padding:6px 0;
 display:flex;
 justify-content:space-between;
 }
-
-  .btn{
-margin-top:auto;
-}
   
 .btn{
 display:block;
-margin-top:auto;
 padding:10px;
 background:gold;
 color:black;
@@ -80,6 +75,7 @@ text-align:center;
 font-weight:bold;
 border-radius:8px;
 text-decoration:none;
+margin-top:20px;
 }
 
   .exchange-icon{
