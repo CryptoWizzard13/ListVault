@@ -147,6 +147,28 @@ margin-top:10px;
 opacity:0.6;
 letter-spacing:2px;
 }
+  .exchange-title{
+display:flex;
+align-items:center;
+justify-content:space-between; /* pushes logo to the right */
+color:gold;
+font-weight:bold;
+}
+
+.exchange-logo{
+width:28px;
+height:28px;
+border-radius:50%;
+object-fit:cover;
+border:2px solid gold;
+background:#111;
+transition:0.25s;
+}
+
+.card:hover .exchange-logo{
+transform:scale(1.1);
+box-shadow:0 0 8px gold;
+}
 </style>
 
 </head>
@@ -166,25 +188,37 @@ We help blockchain projects get listed, marketed, and exposed across top-tier ex
 <div class="grid">
 
 <div class="card">
-<h3>Coinstore</h3>
+<h3 class="exchange-title">
+  Coinstore
+  <img src="logos/coinstore.png" class="exchange-logo">
+</h3>
 <p>Exchange listing packages including PR campaigns, KOL marketing, liquidity support, banners, and global exposure.</p>
 <a href="coinstore.html">Explore</a>
 </div>
 
 <div class="card">
-<h3>Weex</h3>
+<h3 class="exchange-title">
+  Weex
+  <img src="logos/weex.png" class="exchange-logo">
+</h3>
 <p>Listing services with trading campaigns, AMA sessions, influencer marketing, and full exchange exposure support.</p>
 <a href="weex.html">Explore</a>
 </div>
 
 <div class="card">
-<h3>BTCC</h3>
+<h3 class="exchange-title">
+  BTCC
+  <img src="logos/btcc.png" class="exchange-logo">
+</h3>
 <p>Exchange listing packages with global exposure, futures listing options, and influencer campaigns.</p>
 <a href="btcc.html">Explore</a>
 </div>
 
 <div class="card">
-<h3>Tothemoon</h3>
+<h3 class="exchange-title">
+  Tothemoon
+  <img src="logos/tothemoon.png" class="exchange-logo">
+</h3>
 <p>Token listing ecosystem with trading competitions, liquidity programs, and structured growth campaigns.</p>
 <a href="tothemoon.html">Explore</a>
 </div>
